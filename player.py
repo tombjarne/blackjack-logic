@@ -3,6 +3,8 @@ class Player:
     bank = 0
     bet = 0
     cards = []
+    split = False
+    double = False
 
     def __init__(self, name, bank, bet):
         self.name = name
@@ -29,3 +31,9 @@ class Player:
 
     def getcards(self):
         return self.cards
+
+    def setdouble(self, double):
+        self.double = double
+
+    def setsplit(self, split):
+        self.double = split
