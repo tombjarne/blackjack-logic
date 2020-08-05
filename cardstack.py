@@ -1,5 +1,6 @@
 from card import Card
 
+
 class CardStack:
     cardStack = []
     symbols = [
@@ -39,11 +40,11 @@ class CardStack:
     ]
 
     def __init__(self):
-        self.createCards()
+        self.createcards()
 
     def createcards(self):
         for i in range(1, 10, 1):
-            self.cardStack.append(Card("Diamond " + i, "Diamond", i, False))
+            self.cardStack.append(Card("Diamond " + str(i), "Diamond", i, False))
 
         self.cardStack.append(Card("Diamond Jack", "Diamond", 10, False))
         self.cardStack.append(Card("Diamond Queen", "Diamond", 10, False))
@@ -51,7 +52,7 @@ class CardStack:
         self.cardStack.append(Card("Diamond Ace", "Diamond", 11, True))
 
         for i in range(1, 10, 1):
-            self.cardStack.append(Card("Clubs " + i, "Clubs", i, False))
+            self.cardStack.append(Card("Clubs " + str(i), "Clubs", i, False))
 
         self.cardStack.append(Card("Clubs Jack", "Clubs", 10, False))
         self.cardStack.append(Card("Clubs Queen", "Clubs", 10, False))
@@ -59,7 +60,7 @@ class CardStack:
         self.cardStack.append(Card("Clubs Ace", "Clubs", 11, True))
 
         for i in range(1, 10, 1):
-            self.cardStack.append(Card("Heart " + i, "Heart", i, False))
+            self.cardStack.append(Card("Heart " + str(i), "Heart", i, False))
 
         self.cardStack.append(Card("Heart Jack", "Heart", 10, False))
         self.cardStack.append(Card("Heart Queen", "Heart", 10, False))
@@ -67,7 +68,7 @@ class CardStack:
         self.cardStack.append(Card("Heart Ace", "Heart", 11, True))
 
         for i in range(1, 10, 1):
-            self.cardStack.append(Card("Spades " + i, "Spades", i, False))
+            self.cardStack.append(Card("Spades " + str(i), "Spades", i, False))
 
         self.cardStack.append(Card("Spades Jack", "Spades", 10, False))
         self.cardStack.append(Card("Spades Queen", "Spades", 10, False))

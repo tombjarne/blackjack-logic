@@ -19,3 +19,6 @@ class Card:
 
     def getace(self):
         return self.ace
+
+    def getname(self):
+        return self.name

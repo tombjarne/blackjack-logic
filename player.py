@@ -1,15 +1,13 @@
 class Player:
     name = ""
     bank = 0
-    bet = 0
+    bet = 5
     cards = []
     split = False
     double = False
 
-    def __init__(self, name, bank, bet):
+    def __init__(self, name):
         self.name = name
-        self.bank = bank
-        self.bet = bet
 
     def getbank(self):
         return self.bank
@@ -24,7 +22,12 @@ class Player:
         self.bank += value
 
     def setbet(self, value):
-        self.bet += value
+        if value >= 5 and self.bank >= 5:
+            self.bet += value
+            self.bank -= value
+            return True
+        else:
+            return False
 
     def setcard(self, card):
         self.cards.append(card)
