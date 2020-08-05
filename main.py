@@ -14,7 +14,7 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    newcard = Card("König", "Symbol", 3, False)
+    newcard = Card("Symbol", 3, False)
     print(newcard.getSymbol())
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
